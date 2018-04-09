@@ -8,15 +8,32 @@ https://cloud.tencent.com/document/product/436/12270
 https://github.com/tencentyun/cos-python-sdk-v5/blob/master/qcloud_cos/demo.py
 
 用在自己的项目里面，将qcloud_cos3 放到项目根目录下，引用里面的方法的时候，将demo 里面的
+
 from qcloud_cos import CosConfig
+
  换成
+ 
  from qcloud_cos3 import CosConfig
  
  以此类推
+ 
+ 
+ 
 
 ## Motivation
 现在有很多包都依赖python3.* ，这个也是一个趋势。
 最近在写一个qt的项目，用了pyqt5，就依赖python 3.5.
 网上找的又觉得都有点小问题，所以就自己动手在官方的包上改动了一下，处理了所有不兼容的函数。
 
+ 
+## 修改的地方
 
+urllib 包的相关方法,python2 python3 有区别的地方改过来了
+py2 和py3的字符编码问题
+queue 首字母小写
+print函数
+python3 tuple lambda函数
+等。。。不记得了
+
+ 
+ 
