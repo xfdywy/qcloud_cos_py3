@@ -1,5 +1,6 @@
 # qcloud_cos_py3
 
+腾讯云COS 对象存储的python SDK python3 版本
 腾讯云COS 对象存储的python SDK 官方只支持python2.7。我自己修改了官方的代码，这个版本是支持python3.* 的版本。所有代码基本保持原样，只是做了python2 到python3 的兼容性处理。初步使用无bug。有bug欢迎提issue。
 ## 用法
 所有方法和接口都没变，请参照官方教程
